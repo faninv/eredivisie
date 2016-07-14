@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vrienden</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body class="page-vrienden">
+<header class="navbar navbar-custom">
+	<div class="container-fluid">
+ 		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/eredivisie.png" class="logo">
+			</a>
+			<div class="top-user-info-wrapper">
+				<a href="geschiedenis.html">
+					<span class="class="user-info">
+						<span class="user-name">Vincent Defize</span>
+			  			<span class="user-rank trophy-icon">
+		  					<span class="user-points ">450 punten</span>
+		  				</span>
+					</span>
+  					<div class="user-avatar-wrapper"><img class="user-avatar" src="images/man.jpg"/></div>
+  				</a>
+  			</div>
+		</div>
+	</div><!-- /.container-fluid -->  
+</header>
+<div class="content-500">
+	<div class="user-header clearfix">
+		<div class="user-ranking-wrapper">			
+			<div>Ranking</div>
+			<div class="user-ranking">
+				<div class="user-ranking-left">1250.</div>
+				<div class="user-ranking-right">
+					<div class="arrow-up"></div>
+					<div class="rank-sm">4</div>
+				</div>
+			</div>
+		</div>
+		<div class="user-avatar-wrapper">
+			<img class="user-avatar" src="images/man.jpg"/>
+		</div>
+		<div class="user-info">
+			<div class="user-info-right">
+				<div class="user-name">Vincent Defize</div>
+				<div class="user-location">Amsterdam</div>
+				<div class="user-score">
+					<span>450</span> <span>punten</span>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="geschiedenis-tabs-wrapper">
+		<div class="arrow-down"></div>
+		<div class="geschiedenis-tabs clearfix">
+			<ul class="tabs-list clearfix">
+				<li>
+					<a href="instellingen.html">
+						<span class="icon-instellingen"></span>
+						Instellingen
+					</a>
+				</li>
+				<li>
+					<p class="active">
+					<span class="icon-vrienden"></span>
+					Vrienden
+					</p>
+				</li>
+				<li>
+					<a href="geschiedenis.html">
+						<span class="icon-geschiedenis"></span>
+						Geschiedenis
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="add-friend-wrapper">
+		<button type="button" class="add-friend-btn" data-toggle="modal" data-target="#voegToeModal">
+			<span class="icon-friend"></span>
+			Vriend toevoegen
+		</button>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal voegToeModal fade" id="voegToeModal" tabindex="-1" role="dialog" aria-labelledby="voegToeModalLabel">
+		<div class="modal-dialog" role="document">
+	    	<div class="modal-content">    
+				<h4 class="modal-title" id="voegToeModalLabel"><span class="icon-friend"></span>Vriend toevoegen</h4>
+		     	<div class="modal-body">
+			      	<form role="form">
+					 	<div class="form-group">
+					    	<label for="inputdefault">naam</label>
+					    	<input class="form-control" id="inputdefault" type="text">
+						</div>
+						<div class="modal-button-wrapper">	
+							<button type="button" class="voeg-toe-btn">Voeg toe</button>
+						</div>
+					</form>
+	    		</div>
+	    	</div>
+		</div>
+	</div>
+	<div class="vrienden-table">		
+		<div class="vrienden-item clearfix">
+			<div class="vrienden-user">
+				<div class="user-avatar-wrapper">
+					<img class="user-avatar" src="images/vriend_1.png">
+				</div>
+				<div class="vrienden-user-info-wrapper">
+					<div class="vrienden-user-name">Peter Beentjes</div>
+					<div class="vrienden-user-location">Amsterdam</div>
+				</div>
+			</div>
+			<div class="user-score">
+				<span>940</span> <span>Punten</span>
+			</div>
+			<div class="vriend-ranking">
+				<div>ranking</div>
+				<div>514</div>
+			</div>
+			<a class="vrienden-link" href="user-geschiedenis.html"></a>
+		</div>
+		<div class="vrienden-item clearfix">
+			<div class="vrienden-user">
+				<div class="user-avatar-wrapper">
+					<img class="user-avatar" src="images/vriend_2.png">
+				</div>
+				<div class="vrienden-user-info-wrapper">
+					<div class="vrienden-user-name">Verylongname Verylonglastname</div>
+					<div class="vrienden-user-location">VerylongAmsterdamCity</div>
+				</div>
+			</div>
+			<div class="user-score">
+				<span>94023</span> <span>Punten</span>
+			</div>
+			<div class="vriend-ranking">
+				<div>ranking</div>
+				<div>51423</div>
+			</div>
+			<a class="vrienden-link" href="user-geschiedenis.html"></a>
+		</div>
+		<div class="vrienden-item clearfix">
+			<div class="vrienden-user">
+				<div class="user-avatar-wrapper">
+					<img class="user-avatar" src="images/vriend_4.png">
+				</div>
+				<div class="vrienden-user-info-wrapper">
+					<div class="vrienden-user-name">Pavo Kroon</div>
+					<div class="vrienden-user-location">Oostzaan</div>
+				</div>
+			</div>
+			<div class="user-score">
+				<span>890</span> <span>Punten</span>
+			</div>
+			<div class="vriend-ranking">
+				<div>ranking</div>
+				<div>554</div>
+			</div>
+			<a class="vrienden-link" href="user-geschiedenis.html"></a>
+		</div>
+		<div class="vrienden-item clearfix">
+			<div class="vrienden-user">
+				<div class="user-avatar-wrapper">
+					<img class="user-avatar" src="images/vriend_5.png">
+				</div>
+				<div class="vrienden-user-info-wrapper">
+					<div class="vrienden-user-name">Herman Groot</div>
+					<div class="vrienden-user-location">Haarlem</div>
+				</div>
+			</div>
+			<div class="user-score">
+				<span>880</span> <span>Punten</span>
+			</div>
+			<div class="vriend-ranking">
+				<div>ranking</div>
+				<div>559</div>
+			</div>
+			<a class="vrienden-link" href="user-geschiedenis.html"></a>
+		</div>
+		<div class="vrienden-item clearfix">
+			<div class="vrienden-user">
+				<div class="user-avatar-wrapper">
+					<img class="user-avatar" src="images/vriend_6.png">
+				</div>
+				<div class="vrienden-user-info-wrapper">
+					<div class="vrienden-user-name">Herman Groot</div>
+					<div class="vrienden-user-location">Haarlem</div>
+				</div>
+			</div>
+			<div class="user-score">
+				<span>880</span> <span>Punten</span>
+			</div>
+			<div class="vriend-ranking">
+				<div>ranking</div>
+				<div>559</div>
+			</div>
+			<a class="vrienden-link" href="user-geschiedenis.html"></a>
+		</div>
+		<div class="vrienden-item clearfix">
+			<div class="vrienden-user">
+				<div class="user-avatar-wrapper">
+					<img class="user-avatar" src="images/vriend_7.png">
+				</div>
+				<div class="vrienden-user-info-wrapper">
+					<div class="vrienden-user-name">Herman Groot</div>
+					<div class="vrienden-user-location">Haarlem</div>
+				</div>
+			</div>
+			<div class="user-score">
+				<span>880</span> <span>Punten</span>
+			</div>
+			<div class="vriend-ranking">
+				<div>ranking</div>
+				<div>559</div>
+			</div>
+			<a class="vrienden-link" href="user-geschiedenis.html"></a>
+		</div>		
+	</div>
+</div>
+<footer>
+	<nav class="navbar navbar-custom">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="index.html">
+						<span class="icon-programma">
+							<span></span><span></span><span></span>
+						</span>
+						Programma
+					</a>
+				</li>
+				<li><a href="stand.html">
+					<span class="icon-stand"></span>
+					Stand
+					</a>
+				</li> 
+				<li><a href="highscores.html">
+					<span class="icon-highscores"></span>
+					Highscores
+					</a>
+				</li>
+				<li><a href="vrienden.html">
+					<span class="icon-vrienden"></span>
+					Vrienden
+					</a>
+				</li>
+				<li><a href="geschiedenis.html">
+					<span class="icon-geschiedenis"></span>
+					Geschiedenis
+					</a>
+				</li>
+			</ul>
+		</div><!-- /.container-fluid -->
+	</nav>
+</footer>
+</body>
+</html>

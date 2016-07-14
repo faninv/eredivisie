@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Statestieken</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/statestieken.js"></script>
+</head>
+<body>
+<header class="navbar navbar-custom">
+	<div class="container-fluid">
+ 		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/eredivisie.png" class="logo">
+			</a>
+			<div class="top-user-info-wrapper">
+				<a href="geschiedenis.html">
+					<span class="class="user-info">
+						<span class="user-name">Vincent Defize</span>
+			  			<span class="user-rank trophy-icon">
+		  					<span class="user-points ">450 punten</span>
+		  				</span>
+					</span>
+  					<div class="user-avatar-wrapper"><img class="user-avatar" src="images/man.jpg"/></div>
+  				</a>
+  			</div>
+		</div>
+	</div><!-- /.container-fluid -->  
+</header>
+<div class="content-500">
+
+	<button type="button" id="matchman" class="matchman-btn" data-toggle="modal" data-target="#matchmanModal">
+		Vriend toevoegen
+	</button>
+
+	<!-- Modal -->
+	<div class="modal matchmanModal fade" id="matchmanModal" tabindex="-1" role="dialog" aria-labelledby="matchmanModalLabel">
+		<div class="modal-dialog" role="document">
+	    	<div class="modal-content">    
+				<h4 class="modal-title" id="matchmanModalLabel">MAN OF THE MATCH</h4>
+				<div class="text-two">Stem nu op de man of the match</div>
+				<div class="text-three">2:49</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		     	<div class="modal-body">
+			      	<form role="form">
+					 	<div class="form-group row">
+					 		<div class="col-xs-6">
+								<div class="checkbox-horizontal-wrapper clearfix">
+								 	<input type="radio" id="radio01" name="radio"/>
+								 	<label for="radio01">
+								 		Arek Milik
+								 		<span></span>
+							 		</label>
+								</div>
+								<div class="checkbox-horizontal-wrapper clearfix">
+								 	<input type="radio" id="radio02" name="radio"/>
+								 	<label for="radio02">
+								 		Amin Younes
+								 		<span></span>
+							 		</label>
+								</div>
+								<div class="checkbox-horizontal-wrapper clearfix">
+								 	<input type="radio" id="radio03" name="radio"/>
+								 	<label for="radio03">
+								 		Lasse Schone
+								 		<span></span>
+							 		</label>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="checkbox-horizontal-wrapper clearfix">
+								 	<input type="radio" id="radio04" name="radio"/>
+								 	<label for="radio04">
+								 		Erik Falkendurg
+								 		<span></span>
+							 		</label>
+								</div>
+								<div class="checkbox-horizontal-wrapper clearfix">
+								 	<input type="radio" id="radio05" name="radio"/>
+								 	<label for="radio05">
+								 		Bruno Andrade
+								 		<span></span>
+							 		</label>
+								</div>
+								<div class="checkbox-horizontal-wrapper clearfix">
+								 	<input type="radio" id="radio06" name="radio"/>
+								 	<label for="radio06">
+								 		Lesly de Sa
+								 		<span></span>
+							 		</label>
+								</div>
+							</div>
+						</div>
+						<div class="modal-button-wrapper">	
+							<button type="button" class="voeg-toe-btn">Bevestig</button>
+						</div>
+					</form>
+	    		</div>
+	    	</div>
+		</div>
+	</div>
+	<div class="game-detail">
+		<div class="game-detail-inner">
+			<div class="row">
+				<div class="col-xs-3">
+					<div class="team-logo"><img src="images/club_logos/Ajax.png"></div>
+					<div class="team-name">AFC Ajax</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="score">
+						<div class="">1</div><div class="defis"></div><div class="">0</div>
+					</div>
+					<div class="icon-clock"></div>
+					<div class="start-time-title">Wedstrijdtijd</div>
+					<div class="start-time">00:25:23</div>
+					<div class="arrow-down"></div>
+				</div>
+				<div class="col-xs-3">
+					<div class="team-logo"><img src="images/club_logos/Logo_Willem_II.png"></div>
+					<div class="team-name">William II</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tabs-block">		
+		<div class="tabs-wrapper clearfix">
+			<ul class="tabs-list clearfix">
+				<li><a href="twitter.html">
+						<span class="icon-twitter"></span>
+						Twitterfeed
+					</a>
+				</li>
+				<li><p class="active">Statestieken</p></li>
+				<li><a href="game.html">Opstelling</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="statestieken-table">
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">1</div>
+				<div class="col-xs-6">Doelpunten</div>
+				<div class="col-xs-3">0</div>
+			</div>			
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">4</div>
+				<div class="col-xs-6">Schoten</div>
+				<div class="col-xs-3">2</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">2</div>
+				<div class="col-xs-6">Schoten op doel</div>
+				<div class="col-xs-3">1</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">61%</div>
+				<div class="col-xs-6">Balbezit</div>
+				<div class="col-xs-3">39%</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">2</div>
+				<div class="col-xs-6">Tackles</div>
+				<div class="col-xs-3">2</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">0</div>
+				<div class="col-xs-6">Overtredingen</div>
+				<div class="col-xs-3">1</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">0</div>
+				<div class="col-xs-6">Gele kaarten</div>
+				<div class="col-xs-3">1</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">0</div>
+				<div class="col-xs-6">Rode kaarten</div>
+				<div class="col-xs-3">0</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">0</div>
+				<div class="col-xs-6">Geblesseerde</div>
+				<div class="col-xs-3">0</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">2</div>
+				<div class="col-xs-6">Buitenspel</div>
+				<div class="col-xs-3">4</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">2</div>
+				<div class="col-xs-6">Corners</div>
+				<div class="col-xs-3">1</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">50%</div>
+				<div class="col-xs-6">Schot nauwkeurigheid</div>
+				<div class="col-xs-3">50%</div>
+			</div>
+		</div>
+		<div class="statestieken-item">
+			<div class="row">
+				<div class="col-xs-3">73%</div>
+				<div class="col-xs-6">Pass nauwkeurigheid</div>
+				<div class="col-xs-3">54%</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<nav class="navbar navbar-custom">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="index.html">
+						<span class="icon-programma">
+							<span></span><span></span><span></span>
+						</span>
+						Programma
+					</a>
+				</li>
+				<li><a href="stand.html">
+					<span class="icon-stand"></span>
+					Stand
+					</a>
+				</li> 
+				<li><a href="highscores.html">
+					<span class="icon-highscores"></span>
+					Highscores
+					</a>
+				</li>
+				<li><a href="vrienden.html">
+					<span class="icon-vrienden"></span>
+					Vrienden
+					</a>
+				</li>
+				<li><a href="geschiedenis.html">
+					<span class="icon-geschiedenis"></span>
+					Geschiedenis
+					</a>
+				</li>
+			</ul>
+		</div><!-- /.container-fluid -->
+	</nav>
+</footer>
+</body>
+</html>
